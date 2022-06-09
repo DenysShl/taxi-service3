@@ -51,9 +51,3 @@ or `init_db_pg.sql` if your use PostgreSql your need use dependency for `pom.xml
 ### _Structure project_
 
 ![](structure_project.png)
-
-<line>  </line>
-
-## License
-
-With free open source

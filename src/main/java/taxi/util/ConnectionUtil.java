@@ -6,9 +6,11 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class ConnectionUtil {
-    private static final String URL = "jdbc:postgresql://localhost/taxi";
-    private static final String USERNAME = "postgres";
-    private static final String PASSWORD = "postgres";
+    private static final String URL
+            = "jdbc:postgresql://ec2-3-234-131-8.compute-1.amazonaws.com/daova9vht0o00i";
+    private static final String USERNAME = "fvckfjhhyufpyz";
+    private static final String PASSWORD
+            = "22f57ddf7d71e824405299ba4476fcbf1b34734565bf551a933a7b4681068c12";
     private static final String JDBC_DRIVER = "org.postgresql.Driver";
 
     static {
