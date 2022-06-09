@@ -4,7 +4,7 @@
 
 ```A simple web-application that supports authentication, registration and other CRUD operations.```
 
-## Features:
+## Features 👀️:
 
 - Registration like a driver
 - Authentication like a driver
@@ -18,8 +18,7 @@
 - Adding driver to car.
 - Login and Logout
 
-
-## _Installation_
+## 🚀️ Installation 🚀️
 
 1. Type git clone, and then paste the URL you copied earlier.
    - `$ git clone https://github.com/DenysShl/taxi-service.git`
@@ -33,7 +32,7 @@
     </dependency>
 ````
 
-   or `init_db_pg.sql` if your use PostgreSql your need use dependency for `pom.xml`
+or `init_db_pg.sql` if your use PostgreSql your need use dependency for `pom.xml`
 
 ````xml
     <dependency>
