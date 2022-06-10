@@ -1,4 +1,5 @@
-# Taxi-Service
+![](taxi_v.png)
+# ![](car100.png) Taxi-Service ![](car100.png)
 
 ### Project description:
 
@@ -17,6 +18,20 @@
 - Delete driver or manufacturer or car
 - Adding driver to car.
 - Login and Logout
+
+## Realization details
+### Project based on 3-layer architecture:
+ - Data access layer (DAO)
+ - Application layer (services)
+ - Presentation layer (controllers)
+
+## Technologies that were used to create the service:
+ - Apache Tomcat (to run app locally)
+ - MySQL
+ - JDBC
+ - Servlet
+ - JSTL
+ - Maven Checkstyle Plugin
 
 ## 🚀️ Installation 🚀️
 

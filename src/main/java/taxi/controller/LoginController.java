@@ -6,12 +6,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import taxi.exception.AuthenticationException;
 import taxi.lib.Injector;
 import taxi.model.Driver;
 import taxi.service.AuthenticationService;
 
 public class LoginController extends HttpServlet {
+    private static final Logger log = LogManager.getLogger(LoginController.class);
     private static final Injector injector = Injector.getInstance("taxi");
     private final AuthenticationService authenticationService
             = (AuthenticationService) injector.getInstance(AuthenticationService.class);
@@ -33,6 +36,7 @@ public class LoginController extends HttpServlet {
             session.setAttribute("driver_id", driver.getId());
             resp.sendRedirect(req.getContextPath() + "/index");
         } catch (AuthenticationException e) {
+            log.error("Incorrect login = {} or password = {}",login, password, e);
             req.setAttribute("errorMsg", e.getMessage());
             req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);
         }

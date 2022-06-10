@@ -41,5 +41,7 @@
         </tr>
     </c:forEach>
 </table>
+<a href="${pageContext.request.contextPath}/index">home</a>
+<button style="position: center"><%@include file="/WEB-INF/views/header.jsp" %></button>
 </body>
 </html>

@@ -8,7 +8,6 @@
     <title>All cars</title>
 </head>
 <body>
-<%@include file="/WEB-INF/views/header.jsp" %>
 <h1 class="table_dark">All cars:</h1>
 <table border="1" class="table_dark">
     <tr>
@@ -45,5 +44,7 @@
         </tr>
     </c:forEach>
 </table>
+<a href="${pageContext.request.contextPath}/index">home</a>
+<button style="position: center"><%@include file="/WEB-INF/views/header.jsp" %></button>
 </body>
 </html>

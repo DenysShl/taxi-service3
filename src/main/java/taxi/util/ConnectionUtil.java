@@ -4,8 +4,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ConnectionUtil {
+    private static final Logger log = LogManager.getLogger(ConnectionUtil.class);
     private static final String URL
             = "jdbc:postgresql://ec2-3-234-131-8.compute-1.amazonaws.com/daova9vht0o00i";
     private static final String USERNAME = "fvckfjhhyufpyz";
@@ -28,6 +31,7 @@ public class ConnectionUtil {
         try {
             return DriverManager.getConnection(URL, dbProperties);
         } catch (SQLException e) {
+            log.error("Can't create connection to DB ", e);
             throw new RuntimeException("Can't create connection to DB ", e);
         }
     }
