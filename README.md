@@ -59,6 +59,10 @@ or `init_db_pg.sql` if your use PostgreSql your need use dependency for `pom.xml
 
 3. If your want data test, there use insert data from file `data_for_test`
 
+## Repositories
+1. GitHub: `https://github.com/DenysShl/taxi-service.git`
+2. Heroku: `https://git.heroku.com/taxi-service3.git`
+
 ### _Structure database_
 
 ![](structure_db.png)
@@ -66,3 +70,9 @@ or `init_db_pg.sql` if your use PostgreSql your need use dependency for `pom.xml
 ### _Structure project_
 
 ![](structure_project.png)
+
+### Also, you can just check it out following this link
+`https://taxi-service3.herokuapp.com`
+
+login: `test`
+pas: `q123`
