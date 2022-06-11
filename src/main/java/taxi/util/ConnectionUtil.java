@@ -9,14 +9,10 @@ import org.apache.logging.log4j.Logger;
 
 public class ConnectionUtil {
     private static final Logger log = LogManager.getLogger(ConnectionUtil.class);
-    private static final String URL
-            = "jdbc:postgresql://ec2-3-234-131-8.compute-1.amazonaws.com/daova9vht0o00i";
-    private static final String USERNAME
-            = "fvckfjhhyufpyz";
-    private static final String PASSWORD
-            = "22f57ddf7d71e824405299ba4476fcbf1b34734565bf551a933a7b4681068c12";
-    private static final String JDBC_DRIVER
-            = "org.postgresql.Driver";
+    private static final String URL = "YOUR DATABASE URL";
+    private static final String USERNAME = "YOUR USERNAME";
+    private static final String PASSWORD = "YOUR PASSWORD";
+    private static final String JDBC_DRIVER = "YOUR DRIVER";
 
     static {
         try {

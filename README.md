@@ -1,5 +1,5 @@
-![](taxi_v.png)
-# ![](car100.png) Taxi-Service ![](car100.png)
+![](screenshots/taxi_v.png)
+# ![](screenshots/car100.png) Taxi-Service ![](screenshots/car100.png)
 
 ### Project description:
 
@@ -31,14 +31,17 @@
  - JDBC
  - Servlet
  - JSTL
+ - JSP
+ - Log4j
  - Maven Checkstyle Plugin
 
 ## 🚀️ Installation 🚀️
 
 1. Type git clone, and then paste the URL you copied earlier.
    - `$ git clone https://github.com/DenysShl/taxi-service.git`
-2. Init DB a file `init_db.sql` if MySql and use this dependency for `pom.xml`
-
+2. Init DB a file `init_db.sql` if MySql and use this dependency 
+for `pom.xml` -> Init DB using a file `init_db.sql` that's located in resources folder if you use MySQL and dependency for `pom.xml` 
+below:
 ````xml
     <dependency>
         <groupId>mysql</groupId>
@@ -47,7 +50,8 @@
     </dependency>
 ````
 
-or `init_db_pg.sql` if your use PostgreSql your need use dependency for `pom.xml`
+or `init_db_pg.sql` if your use PostgreSql your need use dependency for `pom.xml` -> or `init_db_pg.sql` that's located in resources folder too if you use PostgreSQL and dependency for `pom.xml` 
+below:
 
 ````xml
     <dependency>
@@ -57,22 +61,22 @@ or `init_db_pg.sql` if your use PostgreSql your need use dependency for `pom.xml
     </dependency>
 ````
 
-3. If your want data test, there use insert data from file `data_for_test`
+3. If your want data test, there use insert data from file `data_for_test`  -> If you want you can use starting set of data for testing of the project. `data_for_test.sql` is located in resources folder.
 
 ## Repositories
-1. GitHub: `https://github.com/DenysShl/taxi-service.git`
-2. Heroku: `https://git.heroku.com/taxi-service3.git`
+### 1. [GitHub](https://github.com/DenysShl/taxi-service3.git)
+### 2. [Heroku](https://git.heroku.com/taxi-service3.git)
 
-### _Structure database_
+### _ Database structure_
 
-![](structure_db.png)
+![](screenshots/structure_db.png)
 
-### _Structure project_
+### _Project structure_
 
-![](structure_project.png)
+![](screenshots/structure_project.png)
 
 ### Also, you can just check it out following this link
-`https://taxi-service3.herokuapp.com`
+### [taxi-service3 for heroku](https://taxi-service3.herokuapp.com)
 
 login: `test`
 pas: `q123`
