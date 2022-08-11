@@ -19,7 +19,7 @@
 <%--        <br>--%>
         <label for="password"><i class="fas fa-lock"></i></label>
         <input type="password" name="password" id="password" placeholder="Please enter your password" required>
-        <button type="submit" value="login">Login</button>
+        <button type="submit">Login</button>
     </form>
     <h4><a href="${pageContext.request.contextPath}/drivers/add">Register</a></h4>
 </div>
